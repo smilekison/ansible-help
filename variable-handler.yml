@@ -9,6 +9,10 @@
   vars:
     main_playbook_variable: "Hello, what is smile kisan"
     is_enabled: false
+    fruits:
+    - apple
+    - banana
+    - orange
 
   tasks:
   - name: String variable from main_playbook_variable
@@ -19,3 +23,8 @@
     debug:
       msg: "Variable is true"
     when: is_enabled
+
+  - name: List variable from book
+    debug:
+      msg: fruits[0]
+    # when: is_enabled
