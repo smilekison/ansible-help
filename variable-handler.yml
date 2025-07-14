@@ -7,7 +7,7 @@
   # - custom-roles
 
   vars:
-    main_playbook_variable: "Hello, This is smile kisan"
+    main_playbook_variable: "Hello, what is smile kisan"
 
   tasks:
   - name: String variable from main_playbook_variable
