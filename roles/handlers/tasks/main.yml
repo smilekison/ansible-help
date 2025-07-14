@@ -1,14 +1,21 @@
-- name: Update apt cache and install nginx on serverb B
+- name: Update apt cache and install nginx on server B
   become: true
   apt:
     name: nginx
     state: latest
     update_cache: yes
 
+- name: remove default index page
+  file:
+    path: /var/www/html/index.html
+    state: absent
+  # become: true
+
 - name: index.html copy
   template: src=index.html dest=/var/www/html/index.html
-
-## Update the content on website
+  # become: true
+  #
+  ## Update the content on website
 - name: udpated.html file
   template: src=updated.html dest=/var/www/html/updated.html
   notify:
