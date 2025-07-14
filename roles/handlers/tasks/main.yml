@@ -20,5 +20,6 @@
   template: src=updated.html dest=/var/www/html/updated.html
   notify:
   - Restart Nginx
+  become: true
 
 # server_b ansible_host=18.130.180.247 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
