@@ -18,4 +18,4 @@
   - name: Boolean variable from book
     debug:
       msg: "Variable is true"
-    when: true
+    when: is_enabled
