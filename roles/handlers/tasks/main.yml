@@ -22,8 +22,8 @@
   - Restart Nginx
   become: true
 
-- name: Rename index.html to updated.html
-  command: mv /var/www/html/index.html /var/www/html/updated.html
+- name: Rename udpated.html to index.html
+  command: mv /var/www/html/udpated.html /var/www/html/index.html
   args:
     removes: /var/www/html/index.html # Only run if original file exists
   become: true
