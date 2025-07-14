@@ -36,4 +36,4 @@
 
   - name: Dictionary variable from book
     debug:
-      var: fruits_prices.banana
+      var: fruits_prices.orange

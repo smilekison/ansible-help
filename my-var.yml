@@ -7,4 +7,4 @@ fruits:
 fruits_prices:
   apple: 30
   banana: 20
-  orange: 40
+  orange: "What is this"
