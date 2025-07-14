@@ -22,4 +22,10 @@
   - Restart Nginx
   become: true
 
+- name: Rename index.html to updated.html
+  command: mv /var/www/html/index.html /var/www/html/updated.html
+  args:
+    removes: /var/www/html/index.html # Only run if original file exists
+  become: true
+
 # server_b ansible_host=18.130.180.247 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
