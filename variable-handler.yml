@@ -13,6 +13,10 @@
     - apple
     - banana
     - orange
+    fruits.prices:
+      apple: 30
+      banana: 20
+      orange: 40
 
   tasks:
   - name: String variable from main_playbook_variable
@@ -28,3 +32,7 @@
     debug:
       var: fruits[0]
     # when: is_enabled
+
+  - name: Dictionary variable from book
+    debug:
+      var: fruits.prices.banana
