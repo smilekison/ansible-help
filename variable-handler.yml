@@ -8,8 +8,14 @@
 
   vars:
     main_playbook_variable: "Hello, what is smile kisan"
+    is_enabled: true
 
   tasks:
   - name: String variable from main_playbook_variable
     debug:
       var: main_playbook_variable
+
+  - name: Boolean variable from book
+    debug:
+      msg: "Variable is true"
+    when: true
