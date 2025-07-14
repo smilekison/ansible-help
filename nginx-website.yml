@@ -1,4 +1,4 @@
-- name: Example Ansible handbook
+- name: Example Ansible handbook for updating nginx content
   hosts: all
   remote_user: ubuntu
   roles:
