@@ -26,5 +26,5 @@
 
   - name: List variable from book
     debug:
-      msg: fruits[0]
+      var: fruits[0]
     # when: is_enabled
