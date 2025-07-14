@@ -9,13 +9,13 @@
   file:
     path: /var/www/html/index.html
     state: absent
-  # become: true
+  become: true
 
 - name: index.html copy
   template: src=index.html dest=/var/www/html/index.html
-  # become: true
-  #
-  ## Update the content on website
+  become: true
+
+## Update the content on website
 - name: udpated.html file
   template: src=updated.html dest=/var/www/html/updated.html
   notify:
