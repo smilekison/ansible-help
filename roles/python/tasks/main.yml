@@ -11,5 +11,5 @@
     state: directory
 
 - name: install apache2
-  becom: yes
+  become: yes
   apt: name=apache2 update_cache=yes state=latest
