@@ -1,0 +1,15 @@
+---
+- name: Example Ansible playbook for variables
+  hosts: all
+  become: true
+  remote_user: ubuntu
+  # roles:
+  # - custom-roles
+
+  vars:
+    main_playbook_variable: "Hello, This is smile kisan"
+
+  tasks:
+  - name: String variable from main_playbook_variable
+    debug:
+      var: main_playbook_variable

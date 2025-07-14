@@ -1,0 +1,7 @@
+- name: Update apt cache and install nginx on server B
+  become: true
+  apt:
+    name: nginx
+    state: latest
+    update_cache: yes
+
