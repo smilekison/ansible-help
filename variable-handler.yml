@@ -6,17 +6,18 @@
   # roles:
   # - custom-roles
 
-  vars:
-    main_playbook_variable: "Hello, what is smile kisan"
-    is_enabled: false
-    fruits:
-    - apple
-    - banana
-    - orange
-    fruits_prices:
-      apple: 30
-      banana: 20
-      orange: 40
+  vars_files:
+  - my-var.yml
+    # main_playbook_variable: "Hello, what is smile kisan"
+    # is_enabled: false
+    # fruits:
+    # - apple
+    # - banana
+    # - orange
+    # fruits_prices:
+    #   apple: 30
+    #   banana: 20
+    #   orange: 40
 
   tasks:
   - name: String variable from main_playbook_variable
