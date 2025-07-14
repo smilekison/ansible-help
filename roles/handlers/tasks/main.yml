@@ -1,7 +1,7 @@
 - name: Update apt cache and install nginx on serverb B
+  become: true
   apt:
     name: nginx
-    become: true
     state: latest
     update_cache: yes
 
