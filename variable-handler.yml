@@ -8,7 +8,7 @@
 
   vars:
     main_playbook_variable: "Hello, what is smile kisan"
-    is_enabled: true
+    is_enabled: false
 
   tasks:
   - name: String variable from main_playbook_variable
