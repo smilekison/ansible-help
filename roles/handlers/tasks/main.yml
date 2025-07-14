@@ -16,14 +16,14 @@
   become: true
 
 ## Update the content on website
-- name: udpated.html file
+- name: updated.html file
   template: src=updated.html dest=/var/www/html/updated.html
   notify:
   - Restart Nginx
   become: true
 
-- name: Rename udpated.html to index.html
-  command: mv /var/www/html/udpated.html /var/www/html/index.html
+- name: Rename updated.html to index.html
+  command: mv /var/www/html/updated.html /var/www/html/index.html
   args:
     removes: /var/www/html/index.html # Only run if original file exists
   become: true
